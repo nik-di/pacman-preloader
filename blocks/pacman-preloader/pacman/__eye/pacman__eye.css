@@ -1,0 +1,10 @@
+.pacman__eye {
+    background-color: #000000;
+    border-radius: 50%;
+    width: 20px;
+    height: 18px;
+    position: absolute;
+    top: 20%;
+    left: 90px;
+    z-index: 1;
+}

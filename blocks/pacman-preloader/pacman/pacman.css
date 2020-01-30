@@ -1,0 +1,47 @@
+@import url(./__eye/pacman__eye.css);
+@import url(./__food/pacman__food.css);
+@import url(./__food1/pacman__food1.css);
+@import url(./__food2/pacman__food1.css);
+@import url(./__food3/pacman__food3.css);
+
+.pacman {
+    width: 160px;
+    height: 160px;
+    position: relative;
+}
+
+.pacman::before, .pacman::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    border: 80px solid #ffd000;
+    border-radius: 50%;
+    border-right: 80px solid transparent;
+    animation: a1 linear .5s infinite;
+}
+
+.pacman::after {
+    animation: a2 linear .5s infinite;
+}
+
+
+@keyframes a1 {
+    0% { transform: rotate(270deg); }
+    50% { transform: rotate(360deg); }
+    100% { transform: rotate(270deg); } 
+}
+
+@keyframes a2 {
+    0% { transform: rotate(90deg); }
+    50% { transform: rotate(0deg); }
+    100% { transform: rotate(90deg); } 
+}
+
+@keyframes food-motion {
+    20%, 80% { opacity: 1; }
+    100% { transform: translate(-120px, -50%); }
+}

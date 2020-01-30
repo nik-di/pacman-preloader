@@ -1,0 +1,8 @@
+@import url(./pacman/pacman.css);
+
+.pacman-preloader {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 15px 0 15px 0;
+}

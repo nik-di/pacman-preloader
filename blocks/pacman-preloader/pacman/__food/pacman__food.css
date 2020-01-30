@@ -1,0 +1,11 @@
+.pacman__food {
+    background-color: #ffd000;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 50%;
+    right: -100px;
+    transform: translateY(-50%);
+    opacity: 0;
+}
